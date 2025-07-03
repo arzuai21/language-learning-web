@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>✨LearnGrammer✨ – A1/A2 Grammar Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #fce4ec;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .tables {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .level-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
+        .level-box h2 {
+            text-align: center;
+            color: #6a1b9a;
+        }
+        .category {
+            margin-top: 20px;
+        }
+        .category h3 {
+            color: #ab47bc;
+            margin-bottom: 10px;
+        }
+        .category ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .category ul li::before {
+            content: "\1F539"; /* 🔹 */
+            margin-right: 8px;
+        }
+
+        /* 🔄 Menü oku */
+        .menu-toggle {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            background: #6a1b9a;
+            color: white;
+            padding: 10px 15px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            height: 100%;
+            width: 250px;
+            background-color: #fff;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+            padding: 100px 20px 20px 20px;
+            transition: left 0.3s ease;
+            z-index: 1000;
+        }
+
+        .side-menu.open {
+            left: 0;
+        }
+
+        .side-menu h3 {
+            margin-top: 0;
+            color: #6a1b9a;
+        }
+
+        .side-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .side-menu ul li {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        .side-menu ul li a {
+            text-decoration: none;
+            color: #444;
+        }
+
+        .side-menu ul li a:hover {
+            color: #6a1b9a;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ⬅️ Menü Açma Oku -->
+<div class="menu-toggle" onclick="toggleMenu()">➤</div>
+
+<!-- 🌍 YAN MENÜ -->
+<div class="side-menu" id="sideMenu">
+    <h3>🌍 Dil Yardımı</h3>
+    <ul>
+        <li><a href="turkish-help.html">Anadili Türkçe olanlar için</a></li>
+        <li><a href="kids-english.html">English for Kids</a></li>
+        <li><a href="cocuklar-icin.html">Çocuklar için İngilizce</a></li>
+        <li><a href="a1-details.html">A1 Grammar</a> </li>
+        <li><a href="a2-details.html">A2 Grammar</a> </li>
+    </ul>
+</div>
+
+<div class="container">
+    <h1>✨Learn Gramer✨</h1>
+    <p style="text-align: center;">Overview of A1 and A2 Grammar Topics</p>
+
+    <div class="tables">
+        <!-- A1 Box -->
+        <div class="level-box">
+            <h2><a href="a1-details.html" style="text-decoration:none; color: #6a1b9a;">A1 Level</a></h2>
+            <div class="category">
+                <h3>Basic Structures</h3>
+                <ul>
+                    <li>To be (am, is, are)</li>
+                    <li>Subject Pronouns (I, you, he, she, it, we, they)</li>
+                    <li>Possessive Adjectives (my, your, his, her...)</li>
+                    <li>Articles (a, an, the)</li>
+                    <li>Plural Nouns (cats, babies, men)</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Tenses</h3>
+                <ul>
+                    <li>Present Simple Tense (I eat / He eats)</li>
+                    <li>Present Continuous Tense (I am eating)</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Questions</h3>
+                <ul>
+                    <li>Yes / No Questions (Are you happy?)</li>
+                    <li>Wh- Questions (What, Where, When, Why, Who, How)</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Other Key Topics</h3>
+                <ul>
+                    <li>There is / There are</li>
+                    <li>Imperatives (Sit down. Don’t go.)</li>
+                    <li>Can / Can’t (ability and permission)</li>
+                    <li>Have got / Has got</li>
+                    <li>This / That / These / Those (Demonstratives)</li>
+                    <li>Prepositions of place (in, on, under, next to)</li>
+                    <li>Adjectives (tall, short, happy...)</li>
+                    <li>Frequency adverbs (always, usually, sometimes...)</li>
+                    <li>Basic Conjunctions (and, but, or)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- A2 Box -->
+        <div class="level-box">
+            <h2><a href="a2-details.html" style="text-decoration:none; color: #6a1b9a;">A2 Level</a></h2>
+            <div class="category">
+                <h3>Tenses</h3>
+                <ul>
+                    <li>Past Simple Tense (Regular & Irregular Verbs)</li>
+                    <li>Future with "going to"</li>
+                    <li>Present Continuous for Future (I’m meeting her tomorrow)</li>
+                    <li>Present Perfect (intro level)</li>
+                    <li>Past Continuous (intro level)</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Modals & Structures</h3>
+                <ul>
+                    <li>Have to / Don’t have to</li>
+                    <li>Should / Shouldn’t</li>
+                    <li>Must / Mustn’t</li>
+                    <li>Comparatives & Superlatives (bigger / the biggest)</li>
+                    <li>Too / Enough</li>
+                    <li>Some / Any / A lot of / Many / Much</li>
+                    <li>Countable / Uncountable Nouns</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Sentence Expansion</h3>
+                <ul>
+                    <li>Object Pronouns (me, you, him, her...)</li>
+                    <li>Gerunds (Swimming is fun.)</li>
+                    <li>Infinitives (I want to eat.)</li>
+                    <li>Question Tags (You’re tired, aren’t you?)</li>
+                    <li>Linkers: because, so, although, when, while</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Time Phrases & Expressions</h3>
+                <ul>
+                    <li>Ago, Last Week, Yesterday, Tomorrow</li>
+                    <li>Prepositions of time (at, in, on)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("sideMenu");
+        menu.classList.toggle("open");
+    }
+</script>
+
+<div class="a1-topics">
+    <h2>📚 A1 Grammar Topics</h2>
+    <ul>
+        <li><a href="to-be.html">To Be (am, is, are)</a></li>
+        <li><a href="possessive-adjectives.html">Possessive Adjectives</a></li>
+        <li><a href="present-simple.html">Present Simple Tense</a></li>
+        <li><a href="there-is-are.html">There is / There are</a></li>
+        <li><a href="this-that-these-those.html">This / That / These / Those</a></li>
+        <li><a href="can-cannot.html">Can / Cannot</a></li>
+        <!-- Devamını da eklersin -->
+    </ul>
+</div>
+
+</body>
+</html>
+

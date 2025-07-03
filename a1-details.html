@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>✨A1 Grammar✨</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #a5186e;
+        }
+
+        p {
+            text-align: center;
+            color: #444;
+        }
+
+        .grammar-box {
+            margin-top: 30px;
+            border: 1px solid #ffd3e1;
+            background-color: #fff6fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .grammar-box h2 {
+            color: #d63384;
+            text-align: center;
+        }
+
+        .highlight-pink {
+            color: #d63384;
+            font-weight: bold;
+        }
+
+        .flashcard-box {
+            margin-top: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .flashcard-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .flashcard {
+            width: 120px;
+            height: 160px;
+            perspective: 1000px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .flashcard .front,
+        .flashcard .back {
+            width: 90%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: #f8bbd0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-family: 'Segoe UI', sans-serif;
+            color: #2c2c2c;
+            text-align: center;
+            padding: 10px;
+            line-height: 1.4;
+            word-wrap: break-word;
+            backface-visibility: hidden;
+            transition: transform 0.6s;
+            position: absolute;
+        }
+
+        .flashcard .back {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard.flipped .front {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard.flipped .back {
+            transform: rotateY(0deg);
+        }
+
+        .icon {
+            font-size: 14px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        .examples-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .examples-box h3 {
+            color: #d63384;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .examples-box ul {
+            list-style-type: '💡 ';
+            padding-left: 20px;
+        }
+
+        .examples-box li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .to-be-extra-box p {
+            margin-top: 40px;
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+        }
+
+        .to-be-extra-box h3 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .to-be-extra-box ul {
+            background-color: #ffe6ef;
+            padding: 20px;
+            border-radius: 10px;
+            list-style-type: '';
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .example-box, .practice-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 700px;
+            margin: 60px auto 40px auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .example-box h3, .practice-box h3 {
+            color: #d63384;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .practice-box p {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .example-box ul, .practice-box ul {
+            padding-left: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .extra-box {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 800px;
+            margin: 60px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>✨A1 Grammar✨</h1>
+    <p>This page includes explanations and examples for A1-level grammar topics.</p>
+
+    <div class="grammar-box">
+        <h2> To Be (am, is, are)</h2>
+        <p><strong>Explanation:</strong> “To be” is used to describe people, things, or feelings.</p>
+        <p><em><strong>🔑 Note:</strong> The verb "to be" is one of the most essential verbs in English. Because it helps to build sentences.</em></p>
+        <p><strong>Structure:</strong> I am / You are / He is / She is / It is / We are / They are</p>
+        <p><strong>Example:</strong> I <span class="highlight-pink">am</span> a student. / They <span class="highlight-pink">are</span> friends.</p>
+    </div>
+
+    <div class="examples-box">
+        <h3> Sample Sentences</h3>
+        <ul>
+            <li>I am a teacher.</li>
+            <li>You are very kind.</li>
+            <li>He is at school.</li>
+        </ul>
+    </div>
+
+    <div class="to-be-extra-box">
+        <h3>How to Use "To Be" in Sentences</h3>
+        <p>You can use the verb <strong>"to be"</strong> with nouns, adjectives or prepositional phrases.</p>
+        <p>"To be" will change the form depending on the subject. And it will come just after subject.</p>
+        <ul>
+            <li>I <span class="highlight-pink">am</span> an engineer. (noun)</li>
+            <li>You <span class="highlight-pink">are</span> pretty. (adjective)</li>
+            <li>She <span class="highlight-pink">is</span> at home. (prepositional phrase)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- 🌊 Flashcard Kutusu -->
+<div class="flashcard-box">
+    <div class="flashcard-container">
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="front">I <span class="icon">🔄</span></div>
+            <div class="back">am</div>
+        </div>
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="front">You / We / They <span class="icon">🔄</span></div>
+            <div class="back">are</div>
+        </div>
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="front">He / She / It <span class="icon">🔄</span></div>
+            <div class="back">is</div>
+        </div>
+    </div>
+</div>
+
+<!-- 💬 Example Sentences Kutusu -->
+<div class="example-box">
+    <h3> Example Sentences</h3>
+    <ul>
+        <li>I <strong>am</strong> tired.</li>
+        <li>They <strong>are</strong> happy.</li>
+        <li>She <strong>is</strong> at school.</li>
+    </ul>
+</div>
+
+<!-- 📚 Practice Kutusu -->
+<div class="practice-box">
+    <h3> Practice Time!</h3>
+    <p>Try filling in the blanks with the correct form of <strong>to be</strong>.</p>
+    <ul>
+        <li>I ___ a student.</li>
+        <li>They ___ tired.</li>
+        <li>He ___ at home.</li>
+    </ul>
+</div>
+
+<!--  Yeni Beyaz Kutu -->
+<div class="extra-box">
+    <h3> Next Step</h3>
+    <p>You can continue adding more content here...</p>
+</div>
+
+<script>
+    function flipCard(card) {
+        card.classList.toggle("flipped");
+    }
+</script>
+</body>
+</html>
